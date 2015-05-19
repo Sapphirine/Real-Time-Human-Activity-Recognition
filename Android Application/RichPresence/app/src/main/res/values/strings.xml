@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rich Presence</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcomestring">RICH PRESENCE</string>
+    <string name="x">X: </string>
+    <string name="y">Y: </string>
+    <string name="z">Z: </string>
+    <string name="Start">Start</string>
+    <string name="Stop">Stop</string>
+    <string name="NotRunning">Not Recording!</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="signIn">Log In</string>
+    <string name="Training">Training Mode</string>
+    <string-array name="activities">
+        <item>Sitting</item>
+        <item>Standing</item>
+        <item>Running</item>
+        <item>Walking</item>
+        <item>Upstairs</item>
+        <item>Downstairs</item>
+    </string-array>
+    <string name="title_activity_login">Rich Presence</string>
+
+</resources>

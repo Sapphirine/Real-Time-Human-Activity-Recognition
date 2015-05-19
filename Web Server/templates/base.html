@@ -1,0 +1,41 @@
+
+{% extends "bootstrap/base.html" %}
+{% block title %}Main{% endblock %}
+
+{% block head %}
+{{ super()}}
+<link rel="shortcut icon" href="{{ url_for('static', filename = 'logo.png') }}"
+type="image/x-icon">
+<link rel="icon" href="{{ url_for('static', filename = 'logo.png') }}"
+type="image/x-icon">
+{% endblock %}
+
+{% block navbar %}
+<!-- navigation bar -->
+<div class="navbar navbar-inverse" role="navigation"> 
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/">Activity Recognition &nbsp &nbsp</a>
+			<!-- <a class="navbar-brand" hsref="/map">Geographic Location &nbsp &nbsp</a> -->
+			<a class="navbar-brand" href="/introduction">Introduction </a>
+		</div>
+    </div>
+</div>
+<!-- <ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="/">Activity Recognition</a></li>
+  <li role="presentation"><a href="/map">Geographic Location</a></li>
+  <li role="presentation"><a href="/introduction">Introduction</a></li>
+</ul>
+ -->{% endblock %}
+
+{% block content %}
+<div class="container">
+	{% block page_content %}
+	{% endblock %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+
+{% endblock %}

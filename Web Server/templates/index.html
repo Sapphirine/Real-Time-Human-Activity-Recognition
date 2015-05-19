@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}
+Activity Recognition
+{% endblock %}
+
+{% block content %}
+{% block javascript %}
+<script language="JavaScript" type="text/javascript">
+function myrefresh() 
+{ 
+       window.location.reload(); 
+}
+setTimeout('myrefresh()',2000);
+</script>
+{% endblock %}
+
+<div class="container">
+  <!-- <p>Refresh frequency (second): </p>
+  <input id = "input"></input>
+  <button id = "set", onclick = 'changeFreq()'>submit</button> -->
+  <!-- <p id = "here"></p> -->
+	<div class="page-header">
+		<h1>Welcome to Activity Recognition Platform!</h1>
+    <!-- <div class="search">
+      <form action="/search" method=post>
+        <input type=text name=search value="{{ request.form.search }}"></br>
+        <div class="actions"><input type=submit value="Search ID"></div>
+      </form>
+    </div> -->
+      {% for message in get_flashed_messages() %}
+        <div class=flash>
+          {{ message }}
+        </div>
+      {% endfor %}
+    </form>
+	</div>
+</div>
+<div class="container">
+  <div class="page-body">
+    <div class="panel panel-default">
+  <!-- Default panel contents -->
+      <div class="panel-heading">Status</div>
+ <!--  <div class="panel-body">
+    <p>The result of activity recognition is presented here</p>
+  </div> -->
+  <!-- Table -->
+      <table class="table">
+  	     <tr>
+  		      <th>Username</th>
+            <th>Our Recognition Result</th>
+            <th>Google Recognition Result</th>
+  	     </tr>
+  	     {% for username, result, google_result in data %}
+  	     <tr>
+  		      <td>{{ username }}</td>
+  		      <td>{{ result }}</td>
+            <td>{{ google_result }}</td>
+  	     </tr>
+  	     {% endfor %}
+        </table>
+      </div>
+    </div>
+</div>
+
+{% endblock %}
+

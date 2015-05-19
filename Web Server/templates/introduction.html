@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Introduction{% endblock %}
+
+{% block content %}
+<div class="container">
+	<div class="page-header">
+		<h1>Activity Recognition Platform</h1>
+	</div>
+</div>
+<div class="container">
+	<div class="page-body">
+		<p>
+			In recent years, breakthroughs in computing and sensing technologies have contributed with novel ideas aiming to solve people’s needs in a wide range of situations: from basic daily living essentials such as personal care, feeding and mobility, to more complex social issues including health, education and security. Understanding people’s actions and their interaction with the environment is a key element for the development of the intelligent systems. Once we are able to grasp the real-time information of human activity and environment, the intelligent systems can actively responsive to people when they anticipate sense their requirement by such information. For example, in terms of the old, if the system detect the old sudden lie down during steady walk, it might be a sign that the old need help and the system will send an alarm. People need intelligent system now and in the near future. Our goal is to achieve one part of it and lay the foundation for the whole complicated intelligent system.
+		</p>
+		<div style="text-align: center;"><IMG SRC="../static/framework.jpg" ALT="image" style="width:700px;height:400px"></div>
+		<div style="text-align: center"><font size="5">Framework</font></div>
+
+		<div id="footer", align=right>
+ 			{% block footer %}
+    		&copy; Created using <a href="http://flask.pocoo.org/docs/0.10/">Flask</a> and <a href="http://jinja.pocoo.org/">Jinja</a>.
+    		{% endblock %}
+		</div>
+		
+	</div>
+</div>	
+
+{% endblock %}
